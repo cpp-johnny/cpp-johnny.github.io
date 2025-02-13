@@ -1,0 +1,487 @@
+<!-- to whoeever is reading this im sorry for cursing your eyes -->
+<!-- yeah i know this code is horrinle  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ng Johnson</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ng Johnson</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/me2.PNG" alt="Ng Johnson profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1 fade-text">👋 Hello, I'm</p>
+        <h1 class="title rgb-glow">Ng Johnson</h1>
+        <p class="section__text__p2 typing-text"></p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/FILLTHISRESUMEIN.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+            onclick="window.open('https://www.linkedin.com/in/ng-johnson-35245a2a4/', '_blank')" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon"
+            onclick="window.open('https://github.com/cpp-johnny', '_blank')" />
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/me1.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              /> 
+              <h3>Experience</h3>
+              <p><u>Ethical Hacking:</u> 4 years <br /><u>AI and ML:</u> 2 years <br /><u>Frontend</u>: 2 years <br /></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Singapore-Cambridge GCE A Level<br />Dunman High School</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi! I'm Johnson and I graduated from Dunman High in 2024, and currently serving NS. I enjoy coding, especially when it can be used to solve <a href="index.html#projects">problems</a>. I am always looking for new challenges and opportunities to grow. Feel free to connect and let's collaborate! Thanks for checking my website out :)
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages | Libaries </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML, CSS, JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/py.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/cpp.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/streamlit.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Streamlit</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/latex.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LaTex</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/numpy.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Numpy, SciPy</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mpl.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matplotlib</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/pandas.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/torch.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pytorch</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/tf.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tensorflow</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/vs.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VSCode</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/nv.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vim, NeoVim</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/arch.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Arch Linux</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/kali.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kali Linux</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bash.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bash, Zsh</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git, Github</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/gimp.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Gimp</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/vmware.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VMWare</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/ollama.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ollama</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/docker.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/mytaxapp.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">MyTaxAppSG</h2>
+            <p>MyTaxAppSG is a robust and interactive application, simplify individual income tax calculations in Singapore. It leverages data from the <a href="https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates" target="_blank">IRAS 2024</a> to ensure accurate results. Filing taxes should be simple and stress-free. Let MyTaxAppSG handle the complexities while you sit back, relax and enjoy!</p>
+            <br>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/cpp-johnny/MyTaxAppSG', '_blank')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://mytaxapp.streamlit.app/', '_blank')"
+            >
+              Live Demo
+            </button>            
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/siv.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Cognition</h2>
+            <p>I am the Co-Founder of Project Cognition, a student initiated SIV that aims to raise awareness for rare disorders. Through our efforts, we successfully raised nearly $700 for our partner, <a href="https://rdss.org.sg/" target="_blank">RDSS</a> to support their important work in this cause. We strongly believe that everyone should have a fighting chance.</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/cpp-johnny/siv', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://siv-project-cognition.streamlit.app/', '_blank')"
+              >
+                Website
+              </button>
+            </div>            
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/bbcs.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Trailblazing with Streamlit</h2>
+            <p>As an organizer and HR for <a href="https://buildingblocs.sg/" target="_blank">BBCS</a>, I designed and conducted a workshop on Streamlit, educating over 200 students across various age groups. The session equipped them with essential and relevant skills to navigate the rapidly growing AI landscape.</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/cpp-johnny/bbcs-streamlit-workshop', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://docs.google.com/presentation/d/1I267zI7fKXEMykm0psdwZXUI5x8TESjvi_r8han4toM/edit?usp=sharing', '_blank')"
+              >
+                Slides
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">ngjson981@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ng-johnson-35245a2a4/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Ng Johnson. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
