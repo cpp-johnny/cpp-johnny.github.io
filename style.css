@@ -364,32 +364,32 @@ section {
 
 .article-container {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
-  justify-content: space-around; /* Evenly spaces columns */
-  gap: 2rem; /* Adds space between columns */
-  text-align: left; /* Ensures text aligns left */
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 2rem; 
+  text-align: left; 
   width: 100%;
 }
 
 article {
   display: flex;
-  align-items: center; /* Ensures icon and text are vertically aligned */
-  gap: 1rem; /* Adds space between icon and text */
-  width: 12rem; /* Adjust the width for consistency */
+  align-items: center; 
+  gap: 1rem; 
+  width: 12rem; 
 }
 
 article .icon {
-  min-width: 2rem; /* Ensures the icons have a fixed width */
+  min-width: 2rem; 
   height: 2rem;
 }
 
 article p {
-  margin: 0; /* Removes any default margin */
+  margin: 0; 
 }
 
-/* Optional: Add hover effects for a polished look */
+/* Hover */
 article:hover {
-  background-color: rgb(245, 245, 245); /* Light gray background on hover */
+  background-color: rgb(245, 245, 245); 
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
@@ -398,6 +398,29 @@ article:hover {
 
 #projects {
   position: relative;
+}
+
+.about-containers {
+  display: flex;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  gap: 20px; 
+  padding-bottom: 10px;
+  scrollbar-width: thin; 
+}
+
+.details-container {
+  min-width: 300px; 
+  scroll-snap-align: start; 
+}
+
+.about-containers::-webkit-scrollbar {
+  height: 8px;
+}
+
+.about-containers::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
 }
 
 .color-container {
