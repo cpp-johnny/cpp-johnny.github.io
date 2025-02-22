@@ -40,3 +40,28 @@ function toggleMenu() {
   }
   
   document.addEventListener("DOMContentLoaded", () => typeEffect());
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+  const body = document.body;
+  const themeToggleDesktop = document.getElementById('theme-toggle');
+  const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+
+  body.classList.toggle('dark-mode');
+
+  // Change the button text based on the current mode
+  if (body.classList.contains('dark-mode')) {
+    if (themeToggleDesktop) themeToggleDesktop.textContent = '☀️';
+    if (themeToggleMobile) themeToggleMobile.textContent = '☀️';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    if (themeToggleDesktop) themeToggleDesktop.textContent = '🌙';
+    if (themeToggleMobile) themeToggleMobile.textContent = '🌙';
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+document.getElementById('theme-toggle')?.addEventListener('click', toggleDarkMode);
+document.getElementById('theme-toggle-mobile')?.addEventListener('click', toggleDarkMode);
+
+document.addEventListener('DOMContentLoaded', loadTheme);

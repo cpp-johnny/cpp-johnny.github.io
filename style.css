@@ -19,6 +19,135 @@ p {
   color: rgb(85, 85, 85);
 }
 
+.dark-mode {
+  background-color: #121212; 
+  color: #ffffff; 
+  scrollbar-width: thin; 
+  scrollbar-color: rgb(74, 80, 83) #1e1e1e; 
+}
+
+.dark-mode html,
+.dark-mode body {
+  scrollbar-width: thin; 
+  scrollbar-color: rgb(74, 80, 83) #1e1e1e; 
+}
+
+.dark-mode p {
+  color: #e0e0e0; 
+}
+
+.dark-mode a {
+  color: #bb86fc; 
+}
+
+.dark-mode a:hover {
+  color: #3700b3; 
+}
+
+/* General Buttons (grey styling in dark mode) */
+.dark-mode .btn-color-1,
+.dark-mode .btn-color-2 {
+  border-color: rgb(74, 80, 83); 
+  color: rgb(74, 80, 83); 
+}
+
+.dark-mode .btn-color-1:hover,
+.dark-mode .btn-color-2:hover {
+  background-color: rgb(74, 80, 83); 
+  color: #ffffff; 
+}
+
+.dark-mode .btn-container .btn-color-1,
+.dark-mode .btn-container .btn-color-2 {
+  border-color: #bb86fc; 
+  color: #bb86fc; 
+}
+
+.dark-mode .btn-container .btn-color-1:hover,
+.dark-mode .btn-container .btn-color-2:hover {
+  background-color: #bb86fc; 
+  color: #ffffff; 
+}
+
+/* Containers */
+.dark-mode .details-container {
+  background-color: #1e1e1e; 
+  border-color: rgb(74, 80, 83); 
+}
+
+.dark-mode .color-container {
+  background-color: #1e1e1e; 
+  border-color: rgb(74, 80, 83); 
+}
+
+.dark-mode .contact-info-upper-container {
+  background-color: #1e1e1e; 
+  border-color: rgb(74, 80, 83); 
+}
+
+.dark-mode .project-title {
+  color: #ffffff; 
+}
+
+.dark-mode .details-container p {
+  color: #e0e0e0; 
+}
+
+.dark-mode ::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px; 
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: rgb(74, 80, 83); 
+  border-radius: 6px; 
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #bb86fc; 
+}
+
+.dark-mode article:hover {
+  background-color: #2e2e2e; 
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.dark-mode .hamburger-icon span {
+  background-color: #bb86fc; 
+}
+
+.dark-mode .hamburger-icon.open span {
+  background-color: #bb86fc; 
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#theme-toggle-mobile {
+  font-size: 1.5rem; 
+  padding: 0.5rem 1rem; 
+  border: none; 
+  background: none; 
+  cursor: pointer;
+  color: #bb86fc; 
+}
+
+#theme-toggle-mobile:hover {
+  opacity: 0.8; 
+}
+
 /* TRANSITION */
 
 a,
