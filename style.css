@@ -44,6 +44,19 @@ p {
   color: #3700b3; 
 }
 
+/* Add these rules to your existing dark-mode section in style.css */
+.dark-mode .menu-links {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .menu-links a {
+  color: #e0e0e0;
+}
+
+.dark-mode .menu-links a:hover {
+  color: #bb86fc;
+}
+
 /* General Buttons (grey styling in dark mode) */
 .dark-mode .btn-color-1,
 .dark-mode .btn-color-2 {
